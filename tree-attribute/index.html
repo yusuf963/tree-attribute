@@ -23,10 +23,10 @@
     <div id="section1">here</div>
     <center>
 
-      <img src="/circle-cropped.png" alt="yusuf portriat photo" usemap="#workmap" />
+      <img loading="lazy" src="/circle-cropped.png" alt="yusuf portriat photo" usemap="#workmap" />
       <figcaption>personal img</figcaption>
-      <map>
-        <area shape="circle" coords="34,44,270,350" href="contact.html"></map>
+      <map name="workmap">
+        <area shape="circle" coords="2,44,270,350" href="contact.html"></map>
       <h1>Welcome to my Website</h1>
       <hr size="3" noshade width="90%">
     </center>
@@ -115,4 +115,45 @@
 <iframe src="https://yusuf-portfolio.netlify.app/" title="W3Schools Free Online Web Tutorials">
 </iframe>
 
+
+<p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy text (Windows).</p>
+
+
+<!-- ! meter tag -->
+<label for="disk_c">Disk usage C:</label>
+<meter id="disk_c" value="6" min="0" max="10">2 out of 10</meter><br>
+
+<label for="disk_d">Disk usage D:</label>
+<meter id="disk_d" value="0.7">60%</meter>
+
+
+<!-- ! -->
+<object data="pic_trulli.jpg" width="300" height="200"></object>
+
+<!-- ! -->
+<label for="cars">Choose a car:</label>
+  <select name="cars" id="cars">
+    <optgroup label="Swedish Cars">
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+    </optgroup>
+    <optgroup label="German Cars">
+      <option value="mercedes">Mercedes</option>
+      <option value="audi">Audi</option>
+    </optgroup>
+  </select>
+
+  <!-- ! out put -->
+  <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+    <input type="range" id="a" value="50">
+    +<input type="number" id="b" value="25">
+    =<output name="x" for="a b"></output>
+    </form>
+
+
+    <!-- ! Set the "autoplay" parameter to "true", so the sound will start playing as soon as the page loads:-->
+    <object data="horse.wav">
+      <param name="autoplay" value="true">
+      </object>
+    
 </html>
