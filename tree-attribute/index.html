@@ -2,31 +2,67 @@
 <html lang="en">
 
 <head>
+  <!-- ! unicode -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- !Setting the viewport to make your website look good on all devices. 1.0 is the zoom level-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Clean Tree</title>
-  <meta decritption='here is my web site'>
+  <!-- ! Refresh every var second -->
+  <meta http-equiv="refresh" content="30">
+  <!-- !Define keywords for search engines  -->
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <!-- !Define a description of your web page: -->
+  <meta name="description" content="Htmal, css, javaScript">
+
 </head>
 
 <body>
 
   <head>
+    <div id="section1">here</div>
     <center>
-      <img src="/circle-cropped.png" alt="yusuf portriat photo" />
+      <img src="/circle-cropped.png" alt="yusuf portriat photo" usemap="#workmap" />
+      <map>
+        <area shape="circle" coords="34,44,270,350" href="contact.html"></map>
       <h1>Welcome to my Website</h1>
       <hr size="3" noshade width="90%">
     </center>
   </head>
 </body>
-<p>Hi, as you landed into mu web page I am going to reward you by <stopng>chocolate</em>
-    </emcocolate>
-    <h3>Hobbies</h3>
-    <ul>
-      <li><small>Swimming</small></li>
-      <li><i>Football</i></li>
-      <li><b>Giutar</b></li>
-      <li> <em>Cooking</em></li>
-    </ul>
-</p>
+<p dir="rtl">Hi, as you landed into mu web page I am going to reward you by <stopng>chocolate</em>
+    </emcocolate>.</p>
+<h3>Hobbies</h3>
+<ul>
+  <li><small>Swimming</small></li>
+  <li><i>Football</i></li>
+  <li><b>Giutar</b></li>
+  <li> <em>Cooking</em></li>
+</ul>
+<h3><a href="contact.html" target="_top">Contatct</a> </h3>
+<h3><a href="#section1" target="_top">Project</a> </h3>
+<a href="tel:+4733378901">+47 333 78 901</a>
+
+
+<br>
+<label for="browser">Choose your browser from the list:</label>
+<input list="browsers" name="browser" id="browser">
+<datalist id="browsers">
+  <option value="Edge">
+  <option value="Firefox">
+  <option value="Chrome">
+  <option value="Opera">
+  <option value="Safari">
+</datalist>
+
+
+<dl>
+  <dt>Coffee</dt>
+  <dd>Black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>White cold drink</dd>
+</dl>
+
+<p>My favorite color is <del>blue</del> <ins>red</ins>!</p>
+
 </html>
