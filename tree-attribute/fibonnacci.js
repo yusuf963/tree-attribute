@@ -3,19 +3,19 @@
 
 
 
-const fibonnacci = () => {
-  let arr = [1, 2, 3, 5]
-  arr.map(num => {
-    if (arr.indexOf(num) === arr.length - 2) {
-      const calculation = num + arr[arr.length - 1]
+const fibonnacci = (number1) => {
+  let arr = [0, 1]
+  for (let i = 0; i <= number1; i++) {
+    if (arr.indexOf(i) == arr.length - 2) {
+      const calculation = arr.indexOf(i) + arr[arr.length - 1]
+      // console.log(arr.indexOf(i), arr[arr.length - 1])
+      // console.log(calculation)
       arr.push(calculation)
-      // console.log('here', calculation)
-      return calculation
+      // console.log('here', arr)
     }
-  })
-  // console.log(arr)
+  }
 }
-fibonnacci()
+fibonnacci(100)
 
 
 arr12 = [1, 2, 3, 4, 5, 6, 7, 8, 9,]
@@ -33,24 +33,28 @@ const fib = (num) => {
   }
   return fib(num - 1) + fib(num - 2)
 }
-console.log(fib(13))
+// console.log(fib(13))
+
+
 
 
 
 
 const fibbanacci1 = (num) => {
   if (num <= 1) {
-    return;
+    return console.log(`${num} is invalied to preform this puzzle. Please provide 2 or greater number.`);
   }
-  const result = [0, 1]
+  const result = [1, 2]
   for (let i = 2; i <= num; i++) {
     const prevNum1 = result[i - 1]
     const prevNum2 = result[i - 2]
+    console.log(prevNum2, prevNum1)
     result.push(prevNum1 + prevNum2)
   }
   console.log(result)
 }
-fibbanacci1(13)
+fibbanacci1(5)
+
 // ! recursive
 const fibona = (n) => {
   if (n <= 1) {
