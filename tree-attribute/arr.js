@@ -64,12 +64,32 @@ lowsetAndHieghst([1, 2, 3, 4, 6, 7, 8, 5])
 // write a function that will convert a price into coins needed to make up that price
 // the coins available are 1, 2, 5, 10, 20, 50, 100
 // the function should use the smallest number of coins possible
-// eg: coins(1.99) => [100, 50, 20, 20, 5, 2, 2]
-
-
+// eg: coins(1.99) => [100, 50, 20, 20, 5, 2]
+const checkingNote = (coin) => {
+  const arr = [100, 50, 20, 20, 5, 2, 1]
+  if (coin <= 1) {
+    return console.log('one note does the job')
+  } else if (coin > 1 && coin <= 2) {
+    return console.log('two note does the job')
+  } else if (coin > 2 && coin <= 5) {
+    return console.log('5 note does the job')
+  } else if (coin > 5 && coin <= 20) {
+    return console.log('20 note does the job')
+  } else if (coin > 20 && coin <= 50) {
+    return console.log('50 note does the job')
+  } else {
+    return console.log('100 note does the job')
+  }
+}
+checkingNote(20)
 // write a function to merge two arrays and remove duplicates
 // eg: mergeUnique([9,8,8,9], [7,8,8,7]) => [9,8,7]
-
+const mergeingArrays = (arr, arr1) => {
+  
+  console.log((Array(arr + arr1)))
+  return arr + arr1
+}
+mergeingArrays([9, 8, 8, 9], [7, 8, 8, 7])
 
 // write a function that converts an array of strings into an array of objects, with the supplied key
 // eg: arrayToObjects(["Mike", "Emily"], "name") => [{ name: "Mike" }, { name: "Emily"}]

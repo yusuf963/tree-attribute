@@ -1,2 +1,3 @@
-
-// write a function that returns the secon
+module.exports ={
+//   checkingTriangle
+// }

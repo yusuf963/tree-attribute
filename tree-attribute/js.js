@@ -46,6 +46,10 @@ console.log(number1[0])
 console.log(number1[number1.length - 1])
 
 
+module.exports = {
+  checkingTriangle
+}
+
 // const new1 = [1, 4, 3, 6, 7, -1]
 // const acculator = (arr) => {
 //   arr.reduce((sum, num) => {
