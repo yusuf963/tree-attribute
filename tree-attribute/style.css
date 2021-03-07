@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
+html{
+  box-sizing: border-box;
+  background-image: url("./yellow-bg.jpg");
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  background-position:top;
+  }
+  *,*:before, *:after{
+  box-sizing: inherit
+  }
+/* *{
+  font-size: 30px;
+} */
+.parag-testing{
+  font-family: sans-serif;
+  /* font-family: cursive;
+  font-family: fantasy;
+  font-family: monospace; */
+  font-style:oblique;
+  font-family: 'DotGothic16', sans-serif;
+  font-size: 0.5rem;
+  /* font-size: 1em; */
+}
+
+.small-hobby{
+  font:italic small-caps bold 74px/1.5
+}
+
+img{
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 600px){
+  html{
+    background-image: url(./2-bg.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+}
