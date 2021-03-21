@@ -1,3 +1,1 @@
-module.exports ={
-//   checkingTriangle
-// }
+console.log(arr)
