@@ -24,6 +24,8 @@ for (let i = 0; i < num1.length; i++) {
 }
 
 // ! sorting
+// ! sorting
+
 const spanish = ['ú', 'ál', 'f']
 
 spanish.sort((a, b) => {
