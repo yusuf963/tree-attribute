@@ -19,3 +19,4 @@ def adding():
 print(callable(adding))
 # unicode
 print(chr(11))
+print(complex(0, 123))
