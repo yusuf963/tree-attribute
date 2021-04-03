@@ -35,3 +35,4 @@ const c2_func = printCoordinate.bind(c2)
 c1_func()
 c2_func()
 c2_func()
+ 
